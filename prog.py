@@ -20,5 +20,5 @@ def fib(n):
 t=input()
 while t>0:
     n=input()
-    print fib(n+2)
+    print fib(n+2)%1000000007
     t-=1
