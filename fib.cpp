@@ -17,8 +17,17 @@ long f(long n) {
 }
 
 main(){
+	int t;
 	long n;
+	cin>>t;
 	F[0]=F[1]=1;
+	while (t>0)
+	{
 	while (cin >> n)
-	cout << (n==0 ? 0 : f(n-1)) << endl;
+	{
+		n=n+2;
+		cout << (n==0 ? 0 : f(n-1)) << endl;
+	}
+		t--;
+	}
 }
